@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,30 +8,85 @@
     <title>MY SITE</title>
 
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
-        <main>
-        
-                <h3>This is my about page</h3>
-        </main>
-    
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+
+    <!-- nanogallery2 -->
+    <link href="nanogallery2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="nanogallery2/dist/jquery.nanogallery2.min.js"></script>
+</head>
     <nav>
         <ul>
-            <li> <a href="home.html">Home</a> </li>
-            <li> <a href="about.html">About</a> </li>
-            <li> <a href="projects.html">Projects</a> </li>
-            <li> <a href="achievements.html">Achievements</a> </li>
-            <li> <a href="current_work.html">Current Work</a> </li>
-            <li> <a href="blog.html">Blog</a> </li>
-            <li> <a href="contact.html">Contact</a> </li>
+            <li> <a href="home.html">home</a> </li>
+            <li> <a href="about.html">who</a> </li>
+            <li> <a href="projects.html">what</a> </li>
+            <li> <a href="achievements.html">what ii</a> </li>
+            <li> <a href="feedback.html">feedback</a> </li>
         </ul>
     </nav>
 
+<main>
+
+    <body>
+
+        <h3>About</h3>
+
+
+        <p>I enrolled in the University of Nottingham as a full-time Electronic and Computer Engineering
+            student in September 2017. Since then, I has been involved in projects ranging from building
+            robotic cars to sensor systems for extreme environments. Outside of my studies, I am extremely
+            passionate about encouraging and empowering girls and women to pursue careers in STEM fields.
+            This fuelled my motivation to become one of the founding members of the university's first
+            Women's Engineering Society. 
+            <br><br>
+            Since joining university, I have enjoyed trying new things and
+            exploring new places such as spending a summer studying AI and Wearable Electronics in Hong Kong,
+            learning salsa dancing and participating in inter-university competitions (and winning some awards!)
+            and winning 2nd place at the 2019 Google BGN Hackathon.</p>
+
+            <p>Here are a few exciting things I have done in the past!</p>
+
+        <!-- ### start of the gallery definition https://nanogallery2.nanostudio.org/ ### -->
+        <div id="nanogallery2" /* gallery settings */ data-nanogallery2='{
+                        "thumbnailWidth":           200,
+                        "thumbnailHeight":          "auto",
+                        "thumbnailBaseGridHeight" : 100,
+                        "thumbnailDisplayTransition": "scaleDown",    
+                        "thumbnailHoverEffect2":      "scale120"
+                    }'>
+
+            <!-- gallery content -->
+            <a href="me2.jpg" data-ngThumb="me2.jpg"> A photo of hana </a>
+            <a href="me2.jpg" data-ngThumb="me2.jpg"> A photo of hana </a>
+            <a href="me2.jpg" data-ngThumb="me2.jpg"> A photo of hana </a>
+            <a href="me2.jpg" data-ngThumb="me2.jpg"> A photo of hana </a>
+            <a href="me2.jpg" data-ngThumb="me2.jpg"> A photo of hana </a>
+            <a href="me2.jpg" data-ngThumb="me2.jpg"> A photo of hana </a>
+            <a href="me2.jpg" data-ngThumb="me2.jpg"> A photo of hana </a>
+            <a href="me2.jpg" data-ngThumb="me2.jpg"> A photo of hana </a>
+            <a href="me2.jpg" data-ngThumb="me2.jpg"> A photo of hana </a>
+            <a href="me2.jpg" data-ngThumb="me2.jpg"> A photo of hana </a>
+            <a href="me2.jpg" data-ngThumb="me2.jpg"> A photo of hana </a>
+            <a href="me2.jpg" data-ngThumb="me2.jpg"> A photo of hana </a>
+
+        </div>
+        <!-- ### end of the gallery definition ### -->
+
+</main>
 
 <footer>
     <span>Hana Makhlouf - Copyright 2019</span>
+    <!-- Add icon library -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+    <a href="https://www.linkedin.com/in/hana-makhlouf-767893149/" class="linkedin"><i class="fa fa-linkedin"></i></a>
 </footer>
 
 </body>
+
 </html>

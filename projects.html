@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,33 +8,149 @@
     <title>MY SITE</title>
 
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="slick/slick.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 </head>
-<body>
 
-        <main>
-        
-                <h3>This is my projects page</h3>
-        </main>
-    
-    <nav>
-        <ul>
-            <li> <a href="home.html">Home</a> </li>
-            <li> <a href="about.html">About</a> </li>
-            <li> <a href="projects.html">Projects</a> </li>
-            <li> <a href="achievements.html">Achievements</a> </li>
-            <li> <a href="current_work.html">Current Work</a> </li>
-            <li> <a href="blog.html">Blog</a> </li>
-            <li> <a href="contact.html">Contact</a> </li>
-        </ul>
-    </nav>
+<nav>
+    <ul>
+        <li> <a href="home.html">home</a> </li>
+        <li> <a href="about.html">who</a> </li>
+        <li> <a href="projects.html">what</a> </li>
+        <li> <a href="achievements.html">what ii</a> </li>
+        <li> <a href="feedback.html">feedback</a> </li>
+    </ul>
+</nav>
+
 
 <body>
 
+    <main>
+        <h3>Projects</h3>
+        <br>
+        <br>
 
-    <footer>
-        <span>Hana Makhlouf - Copyright 2019</span>
-    </footer>
+        <div class="sec-grey paddingSection80">
+            <div class="container">
+                <section class="slider text-center">
+                    <div class="text-center">
+                    </div>
+                    <div class="big-box-slider">
+                        <div class="row box-slider box-slider-content">
 
+                            <div class="col-sm-4 col-xs-12 slide-item">
+                                <div class="row box-slide-item">
+                                    <div
+                                        class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 slide-text text-left">
+                                        <h3>Autonomous Car</h3>
+
+                                        <hr>
+                                        <p>Designing and building an autonomous, robotic car - First Year Engineering
+                                            Project</p>
+                                        <a href="firstyearproject.html" class="btn btn-danger">Learn More<a
+                                                href="firstyearproject.html">Learn
+                                                More</a>
+                                    </div>
+                                    <div class="col-md-7 col-sm-6 slide-photo hidden-xs">
+                                        <img src="firstyrproject.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 col-xs-12 slide-item">
+                                <div class="row box-slide-item">
+                                    <div
+                                        class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 slide-text text-left">
+                                        <h3>3D Model Viewer</h3>
+
+                                        <hr>
+                                        <p>Cross-platform CAD Loader designed for the engineering market to view and
+                                            edit 3D
+                                            shapes - Second year computing project</p>
+                                        <a href="#" class="btn btn-danger">Learn More</a>
+                                    </div>
+                                    <div class="col-md-7 col-sm-6 slide-photo hidden-xs">
+                                        <img src="secondyrcomputing.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 col-xs-12 slide-item">
+                                <div class="row box-slide-item">
+                                    <div
+                                        class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 slide-text text-left">
+                                        <h3>Prototype Speed Radar Gun</h3>
+
+                                        <hr>
+                                        <p>A project design to determine the speed of a moving object using frequency
+                                            change - Second Year Electronics Project</p>
+                                        <a href="secondyrelectronics.html" class="btn btn-danger">Learn More</a>
+                                    </div>
+                                    <div class="col-md-7 col-sm-6 slide-photo hidden-xs">
+                                        <img src="secondyrproject.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 col-xs-12 slide-item">
+                                <div class="row box-slide-item">
+                                    <div
+                                        class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 slide-text text-left">
+                                        <h3>Sensor Network</h3>
+
+                                        <hr>
+                                        <p>Remote sensor network for extreme weather conditions - third year engineering
+                                            project
+
+                                        </p>
+                                        <a href="#" class="btn btn-danger">Learn More</a>
+                                    </div> -->
+                                    <div class="col-md-7 col-sm-6 slide-photo hidden-xs">
+                                        <img src="https://raw.githubusercontent.com/solodev/featured-content-slider/master/images/image-4.jpg"
+                                            alt="" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <script>
+            //Sliders//
+            $('.box-slider-content').slick({
+                centerMode: true,
+                infinite: true,
+                slidesToShow: 3,
+                dots: false,
+                appendDots: jQuery(".box-dots"),
+                autoplay: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        </script>
+
+    </main>
 </body>
+
+<footer>
+    <span>Hana Makhlouf - Copyright 2019</span>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+    <a href="https://www.linkedin.com/in/hana-makhlouf-767893149/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+</footer>
 
 </html>
