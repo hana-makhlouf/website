@@ -11,6 +11,13 @@
 
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 
+     <!-- jQuery -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+
+     <!-- nanogallery2 -->
+     <link href="nanogallery2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+     <script type="text/javascript" src="nanogallery2/dist/jquery.nanogallery2.min.js"></script>
+
 
 </head>
 <nav>
@@ -30,12 +37,30 @@
         <h3>Autonomous Robotic Car: First Year Engineering Project</h3>
         <p>The process involved designing and building several circuits, implementing 
         computer vision using a Raspberry Pi and configuring several sensor circuits
-        using Arduino. <br> This was a group project with 4 coursemates. Our group won
+        using Arduino. <br><br> This was a group project with 4 coursemates. Our group won
         second place in the poster competition as well as earning a place in the top 5 for accuracy 
-        of the robotic car. <br> This was assessed through a race where all built cars had to overcome 
+        of the robotic car. This was assessed through a race where all built cars had to overcome 
         obstacles, measure the angle of an incline, stop at red traffic lights and shoot a ball into a goal.
     
     </p>
+
+
+    <!-- ### start of the gallery definition https://nanogallery2.nanostudio.org/ ### -->
+    <div id="nanogallery2" /* gallery settings */ data-nanogallery2='{
+        "thumbnailWidth":           400,
+        "thumbnailHeight":          "auto",
+        
+        "thumbnailDisplayTransition": "scaleDown",    
+        "thumbnailHoverEffect2":      "scale120"
+    }'>
+
+<!-- gallery content -->
+<a href="proj1.PNG" data-ngThumb="proj1.png"> Car with mounted camera and speaker</a>
+<a href="proj2.PNG" data-ngThumb="proj2.png">Remote controller circuit for the car - Primary stage before complete autonomy </a>
+
+
+</div>
+<!-- ### end of the gallery definition ### -->
 
     </body>
 </main>

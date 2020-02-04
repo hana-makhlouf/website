@@ -5,14 +5,14 @@ html, body{
     margin: 0;
 
     font-family: 'Advent Pro', sans-serif;
-    background-color: #71a6a5;
+    background-color: #f4f4f4;
 }
 
 nav {
     position: fixed; /* USE MEDIA QUERIES to ensure this works well on phone*/
     width: 100vw; /* width set to 100% of the view width */
     height: 60px;
-    background:#71a6a5;
+    background:#f4f4f4;
     top: 0;
 }
 
@@ -26,14 +26,14 @@ nav ul li {
 }
 
 nav ul li a{
-    color:white;
+    color:#373737;
     font-size: 16px;
     text-decoration: none;
     padding: 0 5px;
 }
 
 nav ul li a:hover{
-    color: #ffcb9a;
+    color: #c0b283;
 }
 
 main {
@@ -42,27 +42,28 @@ main {
     padding-bottom: 40px;
     width: 100%;
     max-width: 1040px; /* maximum width the element can grow to */
-    color: #112d32;
+    color: #c0b283;
     margin: 0 auto; /* first value is top and bottom, second value is left and right. L & R set to auto to center */
 }
 
 main h3{
     font-size: 46px;
+    font-family: monospace;
     margin-bottom: 0;
-    color: #112d32;
+    color: #c0b283;
     
 }
 
 main h5{
     font-size: 28px;
     margin: 0;
-    color: #112d32;
+    color: #373737;
 }
 
 main p{
     font-size: 16px;
     font-family: monospace;
-    color: #112d32;
+    color: #373737;
 }
 
 main img{
@@ -92,8 +93,8 @@ main img{
 footer {
     width: 100vw;
     height: 80px;
-    background:#254e58;
-    color:white;
+    background: #dcd0c0;;
+    color:#373737;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -232,7 +233,7 @@ a:hover {
 .box-slider .slick-arrow {
   width: 80px;
   height: 45px;
-  border: 2px solid #d9262c;
+  border: 2px solid #c0b283;
   text-indent: -10000px;
   position: absolute;
   top: 50%;
@@ -249,7 +250,7 @@ a:hover {
 }
 .box-slider .slick-prev {
   background: url(https://raw.githubusercontent.com/solodev/featured-content-slider/master/images/arrowlw.png) no-repeat center center;
-  background-color: #d9262c;
+  background-color: #c0b283;
   left: 1134px;
 }
 .box-slider .slick-prev:hover {
@@ -278,7 +279,7 @@ a:hover {
 }
 .box-slider .slick-next {
   background: url(https://raw.githubusercontent.com/solodev/featured-content-slider/master/images/arrowrw.png) no-repeat center center;
-  background-color: #d9262c;
+  background-color: #c0b283;
   right: 1134px;
 }
 .box-slider .slick-next:hover {
@@ -457,8 +458,8 @@ a:hover {
     padding: 0 32px;
     height: 50px;
     line-height: 50px;
-    background-color: #d9262c;
-    border-color: #d9262c;
+    background-color: #c0b283;
+    border-color: #c0b283;
 }
 
 
