@@ -5,108 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MY SITE</title>
-
+    <title>Hana Makhlouf</title>
     <link rel="stylesheet" href="style.css">
 
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 
-
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
-
-    <title>Product feedback survey example, jQuery Survey Library Example</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://unpkg.com/jquery"></script>
-    <script src="survey-jquery/survey.jquery.js"></script>
-    <link href="survey-jquery/modern.css" type="text/css" rel="stylesheet" />
 
 </head>
 
 <nav>
     <ul>
         <li> <a href="home.html">home</a> </li>
-        <li> <a href="about.html">who</a> </li>
-        <li> <a href="projects.html">what</a> </li>
-        <li> <a href="achievements.html">what ii</a> </li>
-        <li> <a href="feedback.html">feedback</a> </li>
+        <li> <a href="about.html">about</a> </li>
+        <li> <a href="projects.html">work</a> </li>
+        <li> <a href="feedback.html">contact</a> </li>
     </ul>
 </nav>
 
 
 <body>
     <main>
-    <div id="surveyElement"></div>
-    <div id="surveyResult"></div>
+        <div class="container">
+            <form action="action_page.php">
 
-    <script type="text/javascript" src="./index.js"></script>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-    <script>
+                <label for="country">Purpose</label>
+                <select id="country" name="country">
+                    <option value="australia">Feedback on website</option>
+                    <option value="canada">Work</option>
+                    <option value="usa">Other</option>
+                </select>
 
-        Survey
-            .StylesManager
-            .applyTheme("modern");
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-        var json = {
-            questions: [
-                        {
-                            type: "matrix",
-                            name: "Quality",
-                            title: "Please indicate if you agree or disagree with the following statements",
-                            columns: [
-                                {
-                                    value: 1,
-                                    text: "Disagree"
-                                }, {
-                                    value: 2,
-                                    text: "Neutral"
-                                }, {
-                                    value: 3,
-                                    text: "Agree"
-                                }
-                            ],
-                            rows: [
-                                {
-                                    value: "informative",
-                                    text: "Website is informative"
-                                }, {
-                                    value: "easy",
-                                    text: "Website is easy to navigate"
-                                }, {
-                                    value: "interesting",
-                                    text: "Website is interesting"
-                                }
-                            ]
-                        
-                        }
-                    ]
-                     };
+                <input type="submit" value="Submit">
 
-        window.survey = new Survey.Model(json);
-
-        survey
-            .onComplete
-            .add(function (result) {
-                document
-                    .querySelector('#surveyResult')
-                    // .textContent = "Result JSON:\n" + JSON.stringify(result.data, null, 3);
-            });
-
-        $("#surveyElement").Survey({ model: survey });
-    </script>
-</main>
+            </form>
+        </div>
+    </main>
 </body>
 
 
 <footer>
-    <span>Hana Makhlouf - Copyright 2019</span>
-    <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <span>Hana Makhlouf - Copyright 2019
+        <!-- Add icon library -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  
-    <a href="https://www.linkedin.com/in/hana-makhlouf-767893149/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+
+        <a href="https://www.linkedin.com/in/hana-makhlouf-767893149/" class="linkedin"><i
+                class="fa fa-linkedin"></i></a>
+    </span>
 </footer>
 
 </html>
